@@ -24,7 +24,7 @@
             <dependency>
                 <groupId>org.jboss.arquillian</groupId>
                 <artifactId>arquillian-bom</artifactId>
-                <version>1.1.5.Final</version>
+                <version>1.1.2.Final</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -91,21 +91,6 @@
             <version>7.1.1.Final</version>
             <scope>test</scope>
         </dependency>
-                
-        <!-- moje -->
-<!--        <dependency>
-            <groupId>org.jboss.spec</groupId>
-            <artifactId>jboss-javaee-6.0</artifactId>
-            <version>1.0.0.Final</version>
-            <type>pom</type>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.arquillian.protocol</groupId>
-            <artifactId>arquillian-protocol-servlet</artifactId>
-            <scope>test</scope>
-        </dependency>-->
-
         <dependency>
             <groupId>org.jboss.spec</groupId>
             <artifactId>jboss-javaee-6.0</artifactId>
@@ -120,6 +105,13 @@
         </dependency>
   
         <!-- koniec -->
+<!--        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.5</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>-->
     </dependencies>
     
     <profiles>
