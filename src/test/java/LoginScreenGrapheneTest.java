@@ -43,10 +43,10 @@ public class LoginScreenGrapheneTest {
         return MyDeployment.createLoginScreenDeployment();
     }
 
-    @FindBy(id = "loginForm:userName")          // 1. injects an element by default location strategy ("idOrName")
+    @FindBy(id = "userName")          // 1. injects an element by default location strategy ("idOrName")
     private WebElement userName;
 
-    @FindBy(id = "loginForm:password")
+    @FindBy(id = "password")
     private WebElement password;
 
     @FindBy(id = "login")
