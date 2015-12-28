@@ -70,30 +70,30 @@ public class LoginScreenGrapheneTest {
     @Test
     @RunAsClient
     public void should_login_successfully() {
-//        browser.get(deploymentUrl.toExternalForm() + "login.jsf");      // 1. open the tested page
-//
-//        userName.sendKeys("demo");                                      // 3. control the page
-//        password.sendKeys("demo");
-//
-//        guardHttp(loginButton).click();
-//
-//        assertEquals("Welcome", facesMessage.getText().trim());
-//        whoAmI.click();
-//        waitAjax().until().element(signedAs).is().present();
-//        assertTrue(signedAs.getText().contains("demo"));
-          Assert.assertNotNull(browser);
+        browser.get(deploymentUrl.toExternalForm() + "login.jsf");      // 1. open the tested page
+
+        userName.sendKeys("demo");                                      // 3. control the page
+        password.sendKeys("demo");
+
+        guardHttp(loginButton).click();
+
+        assertEquals("Welcome", facesMessage.getText().trim());
+        whoAmI.click();
+        waitAjax().until().element(signedAs).is().present();
+        assertTrue(signedAs.getText().contains("demo"));
+          
     }
     
     
-    @Before
-    public void setUp(){
-        
-        browser = new FirefoxDriver();
-    }
-    
-    @After
-    public void clearUp(){
-        browser.close();
-    }
+//    @Before
+//    public void setUp(){
+//        
+//        browser = new FirefoxDriver();
+//    }
+//    
+//    @After
+//    public void clearUp(){
+//        browser.close();
+//    }
     
 }
